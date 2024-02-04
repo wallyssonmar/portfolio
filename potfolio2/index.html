@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfolio</title>
+    <link href="styles/botao.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/solElua.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body id="corpodapagina" class="corpodapagina" onload="luasumindo()">
+    <!--CABEÇALHO-->
+    <header class="cabecalho" id="atecabecalho">
+        <div class="nome" id="nomeca">
+            <p>Wallysson Marcos</p>
+        </div>
+        <nav class="menu">
+            <ul class="ul-grid">
+                <li class="botao botaohome " id="buttonhome" onclick="irAteaTag('atehome')" onmouseover="aparecerbarra('barraHome')" onmouseout="desaparecerbarra('barraHome')"><a href="javascript:void(0)" class="link-cabeca"  id="btn-home">HOME</a></li>
+                <div class="barra" id="barraHome"></div>
+                <li class="botao botaosobremim " onclick="irAteaTag('atesobremim')" onmouseover="aparecerbarra('barraSobremim')" onmouseout="desaparecerbarra('barraSobremim')"><a href="javascript:void(0)" class="link-cabeca" id="btn-sobremim">SOBRE MIM</a></li>
+                <div class="barra" id="barraSobremim"></div>
+                <li class="botao botaoprojetos" onclick="irAteaTag('ateprojetos')" onmouseover="aparecerbarra('barraProjetos')" onmouseout="desaparecerbarra('barraProjetos')"><a href="javascript:void(0)" class="link-cabeca"  id="btn-projetos">PROJETOS</a></li>
+                <div class="barra" id="barraProjetos"></div>
+            </ul>   
+        </nav>
+
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list" id="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar" >
+                <i class="bi bi-x" id="bi bi-x"></i>
+            </div>
+
+            <nav >
+                <ul>                  
+                    <li class=" botaohome botao-mobile " id="buttonhome" onclick="irAteaTag('atehome')" onmouseover="aparecerbarra('barraHome')" onmouseout="desaparecerbarra('barraHome')"><a class="btn-mobile" href="javascript:void(0)" >HOME</a></li>
+                    <div class="barra" id="barraHome"></div>
+                    <li class=" botaosobremim botao-mobile" onclick="irAteaTag('atesobremim')" onmouseover="aparecerbarra('barraSobremim')" onmouseout="desaparecerbarra('barraSobremim')"><a class="btn-mobile" href="javascript:void(0)" >SOBRE MIM</a></li>
+                    <div class="barra" id="barraSobremim"></div>
+                    <li class="botaoprojetos botao-mobile" onclick="irAteaTag('ateprojetos')" onmouseover="aparecerbarra('barraProjetos')" onmouseout="desaparecerbarra('barraProjetos')"><a class="btn-mobile" href="javascript:void(0)" >PROJETOS</a></li>
+                    <div class="barra" id="barraProjetos"></div>
+                </ul>   
+            </nav>
+
+        </div>
+        <div class="overlay-menu" id="overlay-menu"></div>
+    </header>
+
+    <div class="wrapper">
+            <input type="checkbox" name="checkbox" id="checkbox" class="switch" onclick="Mudartema()" checked>
+        </div>
+
+    <div class="solElua" >
+        <div class="lua" id="luas"></div>
+        <div class="sol" id="sols"></div>  
+    </div>
+
+    <!--PAGINA INICIAL-->
+    <div class="home" id="home">
+        
+        <img src="assets/minhafoto2.png" alt="minha foto" class="minhafoto">
+        <h1 class="hometext" >Olá, eu sou Wallysson Marcos,<br>desenvolvedor full stack</h1>
+    </div>
+
+    <!--REDES SOCIAIS-->
+    <div class="links_links">
+        <a class="links" id="linkslinkedin" href="https://www.linkedin.com/in/wallysson-marcos-238a74261/" target="_blank" ><img class="imagemlink" id="imagemlinkedin" src="assets/linkedinpreto.svg">Linkedin</a>
+        <a class="links" id="linksgit" href="https://github.com/wallyssonmar" target="_blank"> <img class="imagemgit" id="imagemgithub" src="assets/temaclarogithub.svg" alt="github">github</a>
+    </div>
+        <!--SOBRE MIM-->
+    <div class="partesobre" id="parteSobremim">
+        <h2 class="titulosobre">Sobre mim</h2>
+        <p class="sobremim">Meu nome é Wallysson Marcos e atualmente estou cursando Sistemas de Informação. Tenho conhecimentos em <strong>HTML5,
+            CSS3 e JavaScript</strong>, demonstrando minha capacidade de desenvolver páginas web dinâmicas e interativas. Meu
+            objetivo é me tornar um desenvolvedor full stack. Estou comprometido com meu crescimento profissional e
+            continuo aprimorando minhas habilidades para enfrentar os desafios do mundo da programação.</p>
+    </div>
+    <div class="habilidades">
+        <img src="assets/iconeHTML.svg" alt="Iconce HTML" class="html">
+        <img src="assets/iconeCSS.svg" alt="Iconce CSS" class="css3">
+        <img src="assets/iconeJS.svg" alt="Iconce JavaScript" class="JavaScript">
+    </div>
+    
+
+    <!--Projetos-->
+    <h2 id="tituloprojeto" class="tituloprojeto">Projetos</h2>
+    <div id="irAteProjetos" class="projetos">
+        <div class="calculadora projetosTema" id="numerosdeprojetos">
+            <h3 class="numerosdeprojetos" >1.Calculdora</h3>
+            <p id="sobrecalc" class="sobreAcalculadora">Esse é meu primeiro projeto utilizando <strong>HTML, CSS e JavaScript.</strong></p>
+            <div class="linkprojetoUm">
+                <a class="linkcalculadora" href="https://wallyssonmar.github.io/calculadora/" target="_blank" onmouseover="aparecerbarra('barraprojetoUm')" onmouseout="desaparecerbarra('barraprojetoUM')">Veja o projeto</a>
+                <div class="barra" id="barraprojetoUm"></div>
+            </div>
+        </div>
+
+        <div class="projeto2 projetosTema" id="numerosdeprojetos">
+            <h3 class="numerosdeprojetos" >2. Em breve...</h3>
+        </div>
+        <div class="projeto3 projetosTema" id="numerosdeprojetos">
+            <h3 class="numerosdeprojetos" >3. Em breve...</h3>
+        </div>
+    </div>
+    <footer class="rodape">desenvolvido por wallysson</footer>
+<script src="script.js"></script>
+</body>
+
+</html>

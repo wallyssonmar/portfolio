@@ -1,0 +1,88 @@
+
+
+.lua{
+    margin: 9rem 27rem 1rem auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(172, 172, 211);
+    right: 0;
+    position: absolute;
+    box-shadow:0px 0px 15px rgb(247, 247, 247);
+    
+}
+.sol{
+    margin: 9rem 1rem 1rem 27rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius:50%;
+    background-color: yellow;
+    box-shadow:0px 0px 15px rgb(243, 180, 107);
+    position: absolute;
+    
+    
+    
+}
+
+.sol-up{
+    animation: solmoverCima 1s linear forwards;
+}
+@keyframes solmoverCima {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    } to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.sol-down{
+    animation: solMoverBaixo 1s linear forwards;
+}
+@keyframes solMoverBaixo {
+    from{ 
+        transform: translateY(-100%);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.lua-up{
+    animation: luamoverCima 1s linear forwards;
+}
+@keyframes luamoverCima {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    } to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.lua-down{
+    animation: luaMoverBaixo 1s linear forwards;
+}
+@keyframes luaMoverBaixo {
+    from{ 
+        transform: translateY(-100%);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .lua{
+        left: 6rem;
+        margin: 4.5rem auto auto 0.5rem;
+    }
+    .sol{
+        left: 1rem;
+        margin: 4.5rem auto auto 0.5rem;
+    }
+}
