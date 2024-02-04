@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const buttonSobre = document.querySelector('.botaosobremim');
     const buttonProjetos = document.querySelector('.botaoprojetos');
     const linksgithub = document.getElementById('linksgit');
-    const imgHtml = document.querySelector('.html');
+    const partSobre = document.querySelector('.sobremim');
 
     
     
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function(){
             botaoHomeButton.style.background = ('transparent');
         }
 
-        if(scrollPosicao > linksgithub.offsetTop && scrollPosicao <= imgHtml.offsetTop){
+        if(scrollPosicao > linksgithub.offsetTop && scrollPosicao <= partSobre.offsetTop){
             buttonSobre.style.borderRadius = '5px';
             buttonSobre.style.background = ('#969d9e');
             
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function(){
             buttonSobre.style.background = ('transparent');
             
         }
-        if(scrollPosicao >= imgHtml.offsetTop){
+        if(scrollPosicao >= partSobre.offsetTop){
             buttonProjetos.style.borderRadius = '5px';
             buttonProjetos.style.background = ('#969d9e');
             

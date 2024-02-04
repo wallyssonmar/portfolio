@@ -16,6 +16,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .corpodapagina{
@@ -263,6 +264,8 @@ header {
     display:flex;
     justify-content: space-evenly;
     padding: 4rem;
+    margin-top: 5rem;
+    
 }
 
 .html{
@@ -286,15 +289,15 @@ header {
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
-    margin-top: 20rem;
+    margin-top: 10rem;
 
 }
 .projetos{
     display: grid;
     grid-template-columns: 30rem 30rem;
     grid-template-rows: 10rem 10rem;
-    margin: 1rem auto 1rem auto;
-    width: 60rem;
+    margin: 1rem auto 10rem auto;
+    width: 61rem;
     height: auto;
     gap: 1rem;
     
@@ -320,9 +323,9 @@ header {
 }
 .linkprojetoUm{
     width: 8.35rem;
-    height: 2rem;
+    height: 2.5rem;
     margin: 0 auto;
-
+    overflow-y: hidden;
 }
 .linkcalculadora{
     font-family: 'Roboto', sans-serif;
@@ -378,6 +381,7 @@ a.linkcalculadora:hover + .barra{
 @media screen and (max-width: 1020px){
     #corpodapagina{
         width: 100vw;
+        overflow-x: hidden;
     }
     
     
@@ -431,13 +435,15 @@ a.linkcalculadora:hover + .barra{
         }
 
         #irAteProjetos{
-            width: 100vw;
-            padding-left: 2rem;
+            width: 19rem;
+            
+            margin: auto;
         }
         .projetos{
             grid-template-columns: 19rem;
             grid-template-rows: 13rem 13rem 13rem;
             width: 100%;
+            margin: 1rem 0 1rem 0;
         }
         .numerosdeprojetos{
             padding: 1rem ;
